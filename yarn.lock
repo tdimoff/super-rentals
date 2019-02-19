@@ -3052,6 +3052,13 @@ ember-get-config@^0.2.2:
     broccoli-file-creator "^1.1.1"
     ember-cli-babel "^6.3.0"
 
+ember-graphql-adapter@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/ember-graphql-adapter/-/ember-graphql-adapter-1.1.2.tgz#e485932cf54d0d109c151e450b3d9160c11e3b16"
+  integrity sha1-5IWTLPVNDRCcFR5FCz2RYMEeOxY=
+  dependencies:
+    ember-cli-babel "^6.6.0"
+
 ember-inflector@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/ember-inflector/-/ember-inflector-2.1.0.tgz#afcb92d022a4eab58f08ff4578eafc3a1de2d09b"

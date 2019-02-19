@@ -1,5 +1,6 @@
-import DS from 'ember-data';
+import GraphQLAdapter from 'ember-graphql-adapter';
+import config from '../config/environment';
 
-export default DS.JSONAPIAdapter.extend({
-  namespace: 'api'
+export default GraphQLAdapter.extend({
+  endpoint: `${config.apiBaseUrl}/graphql`
 });

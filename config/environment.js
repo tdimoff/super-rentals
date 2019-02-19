@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    apiBaseUrl: 'http://localhost:4000',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -24,6 +25,9 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV['ember-cli-mirage'] = {
+      enabled: false
+    }
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -47,7 +51,7 @@ module.exports = function(environment) {
     // use mirage in production too since the app will break
     // if there is no API for Ember Data
     ENV['ember-cli-mirage'] = {
-      enabled: true
+      enabled: false
     }
   }
 
